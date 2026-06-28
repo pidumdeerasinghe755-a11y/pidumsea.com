@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the Deep Blue</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(rgba(2, 48, 71, 0.7), rgba(33, 158, 188, 0.7)), 
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro h2 {
+            color: #023047;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* Ocean Zones Grid */
+        .zones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .zone-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .zone-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .zone-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .zone-card-content {
+            padding: 20px;
+        }
+
+        .zone-card h3 {
+            color: #219ebc;
+            margin-bottom: 10px;
+        }
+
+        /* Fun Facts Section */
+        .facts-section {
+            background-color: #023047;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+
+        .facts-section h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .facts-list {
+            list-style-type: none;
+        }
+
+        .facts-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .facts-list li::before {
+            content: "🌊";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #023047;
+            color: #8ecae6;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>The Wonders of the Sea</h1>
+        <p>Discover the beauty, mystery, and depth of our planet's vast oceans.</p>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        
+        <section class="intro">
+            <h2>Our Blue Planet</h2>
+            <p>Oceans cover more than 70% of the Earth's surface. They regulate our climate, provide a home to millions of species, and hold secrets that humans are still exploring today.</p>
+        </section>
+
+        <!-- Ocean Zones Section -->
+        <div class="zones-grid">
+            
+            <div class="zone-card">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=500&q=80" alt="Coral Reef">
+                <div class="zone-card-content">
+                    <h3>The Sunlight Zone</h3>
+                    <p>The top layer of the ocean where light penetrates. It's bustling with life, from colorful coral reefs to sea turtles and playful dolphins.</p>
+                </div>
+            </div>
+
+            <div class="zone-card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Deep Ocean Blue">
+                <div class="zone-card-content">
+                    <h3>The Twilight Zone</h3>
+                    <p>As you go deeper, light begins to fade. Creatures here have adapted to low-light conditions, and many can glow in the dark!</p>
+                </div>
+            </div>
+
+            <div class="zone-card">
+                <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=500&q=80" alt="Abyss">
+                <div class="zone-card-content">
+                    <h3>The Midnight Zone</h3>
+                    <p>Complete and total darkness. The water is freezing, and the pressure is immense, yet bizarre and resilient creatures thrive here.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Fun Facts Section -->
+        <section class="facts-section">
+            <h2>Amazing Ocean Facts</h2>
+            <ul class="facts-list">
+                <li>The Pacific Ocean is wider than the Moon.</li>
+                <li>We have explored less than 10% of the global ocean.</li>
+                <li>The Mariana Trench is the deepest known point, plunging nearly 11,000 meters down.</li>
+                <li>The world's longest mountain chain is actually underwater, known as the Mid-Ocean Ridge.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Oceans of the World. Created for sea lovers everywhere.</p>
+    </footer>
+
+</body>
+</html>
